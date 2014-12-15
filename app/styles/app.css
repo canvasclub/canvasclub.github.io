@@ -54,8 +54,30 @@ html, body {
   background-image: url('images/logo_inverted.jpg');
 }
 
+
+.menu-links{
+  float: right;
+  margin-right: 2em;
+  margin-top: 3em;
+}
+
+.menu-links .link{
+  float: left;
+}
+
+.menu-hamburger {
+   display: none;
+  }
+
 .container {
-  width: 100%;
+  /*width: 100%;*/
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.container.menu-active{
+-webkit-transform: translateY(0%);
+  transform: translateY(0%);
 }
 
 .center{
@@ -103,4 +125,92 @@ html, body {
 
 .btn-download {
 
+}
+
+#body-nav {
+  width: 100%;
+  left: 0;
+  height: 240px;
+  border-bottom: 2px solid black;
+
+  background: #111;
+  text-align: center;
+  -webkit-box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0,0,0,0.5);
+  -moz-box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0,0,0,0.5);
+  box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0,0,0,0.5);
+
+  -webkit-transform: translateY(-101%);
+  transform: translateY(-101%);
+}
+
+#body-nav.active{
+  -webkit-transform: translateY(0%) !important;
+  transform: translateY(0%) !important;
+}
+
+#body-nav a{
+  display: block;
+  text-decoration: none!important;
+  height: 60px;
+  line-height: 60px;
+  font-size: 18px;
+  color: #fff;
+  border-bottom: solid 1px #222;
+}
+
+
+@media screen and (max-width: 600px) {
+  .menu-links{
+    display: none;
+  }
+
+  .menu-hamburger {
+    display: inline-block;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    color: #000;
+    font-size: 40px;
+    display: block;
+    width: 1.4em;
+    height: 1em;
+    z-index: 100;
+  }
+
+  .hamburger {
+    display: inline-block;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #000;
+    font-size: 0px;
+    -webkit-transition: all 225ms ease;
+    -moz-transition: all 225ms ease;
+    transition: all 225ms ease;
+    margin: 0 auto;
+  }
+
+  .hamburger:before, .hamburger:after{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    content: '';
+    -webkit-transition: all 225ms ease;
+    -moz-transition: all 225ms ease;
+    transition: all 225ms ease;
+  }
+
+  .hamburger:before {
+      -webkit-transform: translateY(-300%);
+      transform: translateY(-300%);
+  }
+  .hamburger:after {
+      -webkit-transform: translateY(300%);
+      transform: translateY(300%);
+  }
 }
