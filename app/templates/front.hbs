@@ -1,19 +1,29 @@
-<h2 class='title'><div id="logo"></div></h2>
-{{!-- <div class="menu-links">Links</div> --}}
-{{!-- <div class="youtube-background">
-  <iframe frameborder="0" height="50%" width="50%"
-    src="https://youtube.com/embed/7eIJRwjBVoc?autoplay=1&controls=0&showinfo=0&autohide=1">
-  </iframe>
-</div> --}}
+<nav id="body-nav" class="active">
+  <div><a href="https://soundcloud.com/oska-faro">OSKA FARO</a></li>
+  <div><a href="https://soundcloud.com/softglas">Soft Glas</a></li>
+</nav>
 
-  <div class="youtube-container">
-    <iframe frameborder="0" height="100%"
-      src="https://youtube.com/embed/7eIJRwjBVoc?autoplay=0&controls=0&loop=1&showinfo=0&autohide=1&VQ=HD1080">
-    </iframe>
-  </div>
+  <h2 class="title menu-active"><div id="logo"></div></h2>
 
 
-<div class="btn btn-download" {{action 'downloadPressed'}}><a href="https://gum.co/KdhT">Download "Shoes"</a></div>
+  <div class="container menu-active" {{bind-attr class="isActive:menu-active"}}>
+    <div class="menu-links">
+      <div class="link"><a href="http://canvasclubcc.tumblr.com/">Visuals</a></div>
+      <div class="link divider"> / </div>
+      <div class="link"><a href="" {{action "clickedSounds"}}>Sounds</a></div>
+      <div class="link divider"> / </div>
+      <div class="link"><a href="mailto:Canvasclub.cc@gmail.com">Connect</a></div>
+    </div>
 
 
+    <div class="youtube-container">
+      <iframe frameborder="0" height="100%"
+        src="https://youtube.com/embed/7eIJRwjBVoc?autoplay=0&controls=0&loop=1&showinfo=0&autohide=1&VQ=HD1080">
+      </iframe>
+    </div>
+
+
+  <div class="btn btn-download" {{action 'downloadPressed'}}><a href="https://gum.co/KdhT">Download "Shoes"</a></div>
+
+</div>
 {{!-- {{outlet}} --}}

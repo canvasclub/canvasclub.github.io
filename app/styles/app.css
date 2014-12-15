@@ -8,6 +8,10 @@ html, body {
   font-family: BEBAS, 'AvenirNextCondensed-Medium', 'Helvetica-Bold', 'Helvetica', sans-serif;
 }
 
+a{
+  text-decoration: none;
+}
+
 .youtube-container {
   margin-right: auto;
   margin-left: auto;
@@ -54,8 +58,34 @@ html, body {
   background-image: url('images/logo_inverted.jpg');
 }
 
+
+.menu-links{
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.menu-links .link{
+  display: inline-block;
+}
+
+.menu-links .link a{
+  color: rgba(0, 0, 0, 1);
+}
+
+.menu-links .link a:hover{
+  color: rgba(50, 50, 50, 1);
+}
+
+
 .container {
-  width: 100%;
+  /*width: 100%;*/
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.container.menu-active{
+-webkit-transform: translateY(0%);
+  transform: translateY(0%);
 }
 
 .center{
@@ -103,4 +133,35 @@ html, body {
 
 .btn-download {
 
+}
+
+#body-nav {
+  width: 100%;
+  left: 0;
+  height: 120px;
+  border-bottom: 2px solid black;
+
+  background: #111;
+  text-align: center;
+  -webkit-box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0,0,0,0.5);
+  -moz-box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0,0,0,0.5);
+  box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0,0,0,0.5);
+
+  -webkit-transform: translateY(-101%);
+  transform: translateY(-101%);
+}
+
+#body-nav.active{
+  -webkit-transform: translateY(0%) !important;
+  transform: translateY(0%) !important;
+}
+
+#body-nav a{
+  display: block;
+  text-decoration: none!important;
+  height: 60px;
+  line-height: 60px;
+  font-size: 18px;
+  color: #fff;
+  border-bottom: solid 1px #222;
 }
