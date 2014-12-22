@@ -32,12 +32,12 @@ a{
   display: block;
 
   color: white;
-  margin: 2em auto 1.5em;
+  margin: 2em auto 1em;
   width: 100%;
   text-align: center;
 
-  -webkit-transform: translateY(-80%);
-  transform: translateY(-80%);
+  /*-webkit-transform: translateY(-50%);
+  transform: translateY(-50%);*/
 
   transition: 0.2s ease-in;
   -o-transition: 0.2s ease-in;
@@ -52,8 +52,8 @@ a{
 }
 
 #logo {
-  height: 6em;
-  width: 6em;
+  height: 10em;
+  width: 10em;
   margin: 0 auto;
 
   background-image: url('images/logo_original.jpg');
@@ -93,14 +93,16 @@ a{
 
 .container {
   /*width: 100%;*/
-  -webkit-transform: translateY(-25%);
-  transform: translateY(-25%);
+  -webkit-transform: translateY(-15%);
+  transform: translateY(-15%);
 
   transition: 0.2s ease-in;
   -o-transition: 0.2s ease-in;
   -ms-transition: 0.2s ease-in;
   -moz-transition: 0.2s ease-in;
   -webkit-transition: 0.2s ease-in;
+
+  margin-bottom: 2em;
 }
 
 .container.menu-active{
@@ -116,7 +118,7 @@ a{
 
 .btn{
   width: 10em;
-  border: 4px black solid;
+  border: 3px black solid;
   text-align: center;
   padding: 1em;
   margin: 2em auto 1em;
