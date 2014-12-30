@@ -1,3 +1,16 @@
+{{#if isDownloadSong}}
+<div class="overlay">
+  <div class="overlay-container">
+    <div class="iframe-container">
+      <iframe src="http://noisetrade.com/service/widgetv2/e72d44d7-4546-4bd2-bec3-e7938070d4ae" width="300" height="375" scrolling="no" frameBorder="0"></iframe>
+      <a href="#" class="close-thik" {{action "exitDownloadSong"}}></a>
+    </div>
+  </div>
+</div>
+{{/if}}
+
+
+
 <nav id="body-nav" {{bind-attr class="isActived:menu-active"}}>
   <div><a href="https://soundcloud.com/oska-faro">OSKA FARO</a></li>
   <div><a href="https://soundcloud.com/softglas">Soft Glas</a></li>
@@ -20,7 +33,11 @@
       </iframe>
     </div>
 
-<div class="btn btn-download"><a href="http://noisetrade.com/oskafaro/oska-faro" target="_blank">Download "Shoes"</a></div>
+<div class="btn btn-download"><a {{action "clickedDownloadSong"}}>Download "Shoes"</a></div>
+
+
+
+
 
 </div>
 {{!-- {{outlet}} --}}
