@@ -106,13 +106,8 @@ a{
 }
 
 .container.menu-active{
--webkit-transform: translateY(-33%);
-  transform: translateY(-33%);
-}
-
-.container.menu-active{
-  -webkit-transform: translateY(-33%);
-  transform: translateY(-33%);
+  -webkit-transform: translateY(-30%);
+  transform: translateY(-30%);
 }
 
 .container.connect-menu-active{
@@ -275,4 +270,46 @@ a{
 
 .instagram-icon{
   background-image: url('images/instagram_icon.png');
+}
+
+@media only screen and (min-width : 1200px) {
+  .container {
+    -webkit-transform: translateY(-40%);
+    transform: translateY(-40%);
+  }
+}
+
+@media only screen and (max-width : 1200px) {
+  .container {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+
+@media only screen and (max-width : 979px) {
+  .container {
+    -webkit-transform: translateY(-55%);
+    transform: translateY(-55%);
+  }
+}
+
+@media only screen and (max-width : 767px) {
+  .container {
+    -webkit-transform: translateY(-65%);
+    transform: translateY(-65%);
+  }
+}
+
+@media only screen and (max-width : 480px) {
+  .container {
+    -webkit-transform: translateY(-75%);
+    transform: translateY(-75%);
+  }
+}
+
+@media only screen and (max-width : 320px) {
+  .container {
+    -webkit-transform: translateY(-80%);
+    transform: translateY(-80%);
+  }
 }
