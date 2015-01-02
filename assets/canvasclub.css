@@ -93,8 +93,8 @@ a{
 
 .container {
   /*width: 100%;*/
-  -webkit-transform: translateY(-15%);
-  transform: translateY(-15%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
 
   transition: 0.2s ease-in;
   -o-transition: 0.2s ease-in;
@@ -106,8 +106,18 @@ a{
 }
 
 .container.menu-active{
--webkit-transform: translateY(0%);
-  transform: translateY(0%);
+-webkit-transform: translateY(-33%);
+  transform: translateY(-33%);
+}
+
+.container.menu-active{
+  -webkit-transform: translateY(-33%);
+  transform: translateY(-33%);
+}
+
+.container.connect-menu-active{
+  -webkit-transform: translateY(-15%);
+  transform: translateY(-15%);
 }
 
 .center{
@@ -158,10 +168,10 @@ a{
 
 }
 
-#body-nav {
+.body-nav {
   width: 100%;
   left: 0;
-  height: 120px;
+
   border-bottom: 2px solid black;
 
   background: #111;
@@ -170,9 +180,6 @@ a{
   -moz-box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0,0,0,0.5);
   box-shadow: inset -1.5em 0 1.5em -0.75em rgba(0,0,0,0.5);
 
-  -webkit-transform: translateY(-101%);
-  transform: translateY(-101%);
-
   transition: 0.2s ease-in;
   -o-transition: 0.2s ease-in;
   -ms-transition: 0.2s ease-in;
@@ -180,19 +187,37 @@ a{
   -webkit-transition: 0.2s ease-in;
 }
 
-#body-nav.menu-active{
+.body-nav.sounds-menu{
+  height: 120px;
+  -webkit-transform: translateY(-101%);
+  transform: translateY(-101%);
+}
+
+.body-nav.connect-menu{
+  height: 240px;
+  -webkit-transform: translateY(-152%);
+  transform: translateY(-152%);
+}
+
+.body-nav.sounds-menu.menu-active{
   -webkit-transform: translateY(0%) !important;
   transform: translateY(0%) !important;
 }
 
-#body-nav a{
+.body-nav.connect-menu.menu-active{
+  -webkit-transform: translateY(-51%) !important;
+  transform: translateY(-51%) !important;
+}
+
+.body-nav a{
   display: block;
   text-decoration: none!important;
-  height: 60px;
+  /* height: 60px; */
   line-height: 60px;
   font-size: 18px;
   color: #fff;
   border-bottom: solid 1px #222;
+  height: 100%;
 }
 
 .overlay{
@@ -228,4 +253,26 @@ a{
 
 .close-thik:after {
   content: '×'; /* UTF-8 symbol */
+}
+
+.twitter-icon, .instagram-icon{
+
+  width: 25px;
+  display: inline-block;
+  height: 25px;
+  vertical-align: middle;
+  margin-right: 4px;
+
+  background-position: 50%;
+  background-size: 85%;
+  background-repeat: no-repeat;
+
+}
+
+.twitter-icon{
+  background-image: url('images/twitter_icon.png');
+}
+
+.instagram-icon{
+  background-image: url('images/instagram_icon.png');
 }
