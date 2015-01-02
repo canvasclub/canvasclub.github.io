@@ -11,19 +11,34 @@
 
 
 
-<nav id="body-nav" {{bind-attr class="isActived:menu-active"}}>
-  <div><a href="https://soundcloud.com/oska-faro">OSKA FARO</a></li>
-  <div><a href="https://soundcloud.com/softglas">Soft Glas</a></li>
+<nav class="body-nav sounds-menu" {{bind-attr class="isActived:menu-active"}}>
+  <div><a href="https://soundcloud.com/oska-faro">OSKA FARO</a></div>
+  <div><a href="https://soundcloud.com/softglas">Soft Glas</a></div>
 </nav>
 
-<div class="container" {{bind-attr class="isActived:menu-active"}}>
+<nav class="body-nav connect-menu" {{bind-attr class="isConnectActived:menu-active"}}>
+  <div>
+    <a href="mailto:Canvasclub.cc@gmail.com">via email</a>
+  </div>
+  <div>
+    <a href="https://twitter.com/SoftGlas"><div class="twitter-icon"></div>@SoftGlas</a>
+  </div>
+  <div>
+    <a href="https://twitter.com/rufatcamp"><div class="twitter-icon"></div>@Rufatcamp</a>
+  </div>
+  <div>
+    <a href="http://instagram.com/CanvasClub"><div class="instagram-icon"></div>CanvasClub</a>
+  </div>
+</nav>
+
+<div class="container" {{bind-attr class="isActived:menu-active"}} {{bind-attr class="isConnectActived:connect-menu-active"}}>
   <div class="title" {{bind-attr class="isActived:menu-active"}}><div id="logo"></div></div>
   <div class="menu-links">
     <div class="link"><a href="http://canvasclubcc.tumblr.com/">Visuals</a></div>
     <div class="link divider"> / </div>
     <div class="link"><a href="" {{action "clickedSounds"}}>Sounds</a></div>
     <div class="link divider"> / </div>
-    <div class="link"><a href="mailto:Canvasclub.cc@gmail.com">Connect</a></div>
+    <div class="link"><a href="" {{action "clickedConnect"}}>Connect</a></div>
   </div>
 
     <div class="btn btn-download"><a {{action "clickedDownloadSong"}}>Download "Shoes"</a></div>
